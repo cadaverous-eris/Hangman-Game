@@ -4,13 +4,66 @@
 		<meta charset="UTF-8">
 		<title>Hangman</title>
 
+		<link rel="icon" type="image/png" href="./assets/images/noose.png">
+
 		<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	</head>
 	<body>
-		<h1>Hangman</h1>
-		
-		
+		<div id="main-content">
+			<!--<div id="title-div">
+				<img id="game-title" src="./assets/images/hangman_title.png" alt="Hangman">
+				<div id="helper">Press any key to get started!</div>
+			</div>-->
+			<div id="title">
+				<pre><p> _    _                                                     </p></pre>
+				<pre><p>| |  | |                                                    </p></pre>
+				<pre><p>| |__| |   __ _   _ __     __ _   _ __ ___     __ _   _ __  </p></pre>
+				<pre><p>|  __  |  / _` | | '_ \   / _` | | '_ ` _ \   / _` | | '_ \ </p></pre>
+				<pre><p>| |  | | | (_| | | | | | | (_| | | | | | | | | (_| | | | | |</p></pre>
+				<pre><p>|_|  |_|  \__,_| |_| |_|  \__, | |_| |_| |_|  \__,_| |_| |_|</p></pre>
+				<pre><p>                           __/ |                            </p></pre>
+				<pre><p>                          |___/                             </p></pre>
+			</div>
+
+			<div id="instruction">
+				<pre><p>+-------------------------------------------------------------------------------------------------+</p></pre>
+				<pre><p>| <span class="blinking"> ___                                       _                _              _               _   </span> |</p></pre>
+				<pre><p>| <span class="blinking">| _ \ _ _  ___  ___ ___  __ _  _ _  _  _  | |__ ___  _  _  | |_  ___   ___| |_  __ _  _ _ | |_ </span> |</p></pre>
+				<pre><p>| <span class="blinking">|  _/| '_|/ -_)(_-<(_-< / _` || ' \| || | | / // -_)| || | |  _|/ _ \ (_-<|  _|/ _` || '_||  _|</span> |</p></pre>
+				<pre><p>| <span class="blinking">|_|  |_|  \___|/__//__/ \__,_||_||_|\_, | |_\_\\___| \_, |  \__|\___/ /__/ \__|\__,_||_|   \__|</span> |</p></pre>
+				<pre><p>| <span class="blinking">                                    |__/             |__/                                      </span> |</p></pre>
+				<pre><p>+-------------------------+---------------------------------------------+-------------------------+</p></pre>
+			</div>
+
+			<div id=alerts>
+				<pre><p>| <span class="alert-line"></span> |</p></pre>
+				<pre><p>| <span class="alert-line"></span> |</p></pre>
+				<pre><p>| <span class="alert-line"></span> |</p></pre>
+				<pre><p>| <span class="alert-line"></span> |</p></pre>
+				<pre><p>| <span class="alert-line"></span> |</p></pre>
+				<pre><p>+---------------------------------------------+</p></pre>
+			</div>
+
+			<div id="game-div" class="panel">
+				<div id="word-display">
+					<pre><p>+-<span id="word-display-top"></span>-+</p></pre>
+					<pre><p>| <span id="word-display-letters"></span> |</p></pre>
+					<pre><p>+-<span id="word-display-bottom"></span>-+</p></pre>
+				</div>
+
+				<div id="general-display">
+					<pre><p>+----Guessed-Letters----------------------------------+</p></pre>
+					<pre><p>| <span id="guessed-letters">                                                   </span> |</p></pre>
+					<pre><p>+----Stats--------------------------------------------+</p></pre>
+					<pre><p>| Incorrect Letters: <span id="error-count"></span> |</p></pre>
+					<pre><p>| Wins: <span id="win-count"></span> |</p></pre>
+					<pre><p>| Losses: <span id="loss-count"></span> |</p></pre>
+					<pre><p>+-----------------------------------------------------+</p></pre>
+				</div>
+			</div>
+		</div>
+
 		<script type="text/javascript" src="./assets/javascript/game.js"></script>
 	</body>
 </html>
